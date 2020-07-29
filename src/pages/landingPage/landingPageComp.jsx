@@ -7,14 +7,13 @@ const LandingPageComp = () => {
   return (
     <Row>
         <Col lg={6} className='main-background-4 w-100'>
-            part2
         </Col>
         <Col className='main-background-3 w-100'>
             <Row>
                 <Col lg={8} className='logo-1 mt-3 py-5 pl-5'>
                     <img src={logo} alt="Logo" />
                     <div className='label-4'>
-                        STO RADIMO
+                        DISTRIBUCIJA TEHNIKE
                     </div>
                     <div className='label-2'>Distribucija tehnike i zdrave prehrane</div>
                     <div className='label-3'>

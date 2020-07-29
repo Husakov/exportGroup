@@ -23,7 +23,6 @@ const LandingPageFood = () => {
             </Row>
         </Col>
         <Col lg={6} className='main-background-6 w-100'>
-        part2
         </Col>
     </Row>
   );

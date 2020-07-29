@@ -15,28 +15,28 @@ const LandingPageFooter = () => {
                     <div className='contact-headline'>Kontaktirajte nas:</div>
                     <div className='mt-3'>
                         <div className='contact-item d-flex ml-n2'>
-                            <Col lg={6}>E-mail: </Col><Col><div className='float-right contact-info'><div>info@expertgroup.ba</div><div>prodaja@expertgroup.ba</div></div></Col>
+                            <Col lg={6}>E-mail: </Col><Col lg={6}><div className='contact-info'><div>info@expertgroup.ba</div><div>prodaja@expertgroup.ba</div></div></Col>
                         </div>
                         <div className='contact-item d-flex ml-n2 mt-3'>
-                        <Col lg={6}>Adresa: </Col><Col><div className='float-right contact-info'>Ul. Školska bb</div></Col>
+                        <Col lg={6}>Adresa: </Col><Col lg={6}><div className='contact-info'>Ul. Školska bb</div></Col>
                         </div>
                         <div className='contact-item d-flex ml-n2 mt-3'>
-                        <Col lg={6}>Telefon: </Col><Col><div className='float-right contact-info'>+387 63 422 574</div></Col>
+                        <Col lg={6}>Telefon: </Col><Col lg={6}><div className='contact-info'>+387 63 422 574</div></Col>
                         </div>
                         <div className='contact-item d-flex ml-n2 mt-3'>
-                        <Col lg={6}>Fax: </Col><Col><div className='float-right contact-info'>+387 63 422 574</div></Col>
+                        <Col lg={6}>Fax: </Col><Col lg={6}><div className='contact-info'>+387 63 422 574</div></Col>
                         </div>
                         <div className='contact-item d-flex ml-n2 mt-3'>
-                        <Col lg={6}>ID broj: </Col><Col><div className='float-right contact-info'>123 456 567 708</div></Col>
+                        <Col lg={6}>ID broj: </Col><Col lg={6}><div className='contact-info'>123 456 567 708</div></Col>
                         </div>
                         <div className='contact-item d-flex ml-n2 mt-3'>
-                        <Col lg={6}>PDV broj: </Col><Col lg={6}><div className='float-right contact-info'>23 456 567 708</div></Col>
+                        <Col lg={6}>PDV broj: </Col><Col lg={6}><div className='contact-info'>23 456 567 708</div></Col>
                         </div>
                         <div className='contact-item d-flex ml-n2 mt-3'>
-                        <Col lg={6}>IBAN: </Col><Col lg={6}><div className='float-right contact-info'>123 456 789</div></Col>
+                        <Col lg={6}>IBAN: </Col><Col lg={6}><div className='contact-info'>123 456 789</div></Col>
                         </div>
                         <div className='contact-item d-flex ml-n2 mt-3'>
-                        <Col lg={6}>Drustvene mreze: </Col><Col lg={6}><div className='float-right contact-info'>Ul. Školska bb</div></Col>
+                        <Col lg={6}>Drustvene mreze: </Col><Col lg={6}><div className='contact-info'>Ul. Školska bb</div></Col>
                         </div>
                     </div>
                 </Col>

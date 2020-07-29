@@ -11,7 +11,7 @@ const LandingPageMain = () => {
                 <Col lg={8} className='logo-1 mt-3'>
                     <img src={logo} alt="Logo" />
                     <div className='label-1'>
-                        <b>sto radimo</b>
+                        STO RADIMO
                     </div>
                     <div className='label-2'>Distribucija tehnike<br/>i zdrave prehrane</div>
                     <div className='label-3'>Na moderni sustav distribucije nadovezuje se i podrška posebno educiranog prodajnog osoblja koje brine o potrebama svakog kupca.</div>
@@ -23,7 +23,6 @@ const LandingPageMain = () => {
             </Row>
         </Col>
         <Col lg={6} className='main-background-2 w-100'>
-        part2
         </Col>
     </Row>
   );

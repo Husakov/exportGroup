@@ -44,6 +44,7 @@
 
 .logo-1{
     color: white;
+    font: Bold Roboto;
 }
 .label-1{
     color: white;
@@ -70,7 +71,6 @@
 }
 
 .label-9{
-    max-height: 234px;
     text-align: left;
     font: Light 20px/30px Roboto;
     letter-spacing: 0px;
