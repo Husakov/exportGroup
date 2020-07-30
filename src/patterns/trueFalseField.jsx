@@ -8,7 +8,7 @@ const TrueFalseField = ({text, className}) => {
         setCheck(!check);
     }
   return (
-    <Col className='d-flex'>
+    <Col className='d-flex py-3'>
         <div className='pb-2 pr-2'>{text}</div>
         <div className='mx-3 mt-1'>
         <Switch

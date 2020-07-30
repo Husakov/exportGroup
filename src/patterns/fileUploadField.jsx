@@ -11,7 +11,7 @@ const FileUploadField = ({text, checkboxText}) => {
     }
   return (
     <>
-        <h6 className='mx-3 my-3'>{text}</h6>
+        <h6 className='mx-3 my-3 py-3'>{text}</h6>
         <Col className='d-flex'>
             <input style={button} type="button" value="Add images"/>
         <Col>

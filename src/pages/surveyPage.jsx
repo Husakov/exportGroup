@@ -1,25 +1,37 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { useDispatch, useSelector } from 'react-redux'
-import { surveyActionRequest } from '../features/survey';
+import { surveyActionRequest, setStep } from '../features/survey';
 import StepPage from './surveyPage/stepPage';
 import './../styles/surveyPage.css'
 
 const SurveyPage = () => {
     const dispatch = useDispatch();
     const stepper = useSelector(state => state.survey.stepperData)
+    const steps = useSelector(state => state.survey.step)
+
+    const button = {
+        backgroundColor: "black",
+        color: "white",
+        minWidth: "200px",
+        marginBottom: "10%",
+        marginTop: "10%",
+        float: "right"
+    }
+
     useEffect(() => {
         dispatch(surveyActionRequest());
-     }, [dispatch])
+     }, [])
+
+     if(!stepper.length){
+        return null
+    }
   return (
-    <div className="survey">
-        <div className='my-4 pl-4'>{stepper && stepper[1].fieldValue}<span className='float-right'>step 1</span></div>
-        <div className='my-4 pl-4'><ProgressBar variant="success" now={60} /></div>
-        {
-            stepper && stepper.map((step,index) =>{
-                return <StepPage data={step} />
-            })
-        }
+    <div className="survey pt-4">
+        <div className='my-4 pl-4'>{steps < stepper.length && stepper ? stepper[steps].fieldValue : 'Final'}<span className='float-right'>{steps < stepper.length ? `step ${steps}` : 'Completed'}</span></div>
+        <div className='my-4 pl-4'><ProgressBar variant="success" now={(steps-1)/(stepper.length-1)*100} /></div>
+        {steps < stepper.length && <StepPage data={stepper[steps]} />}
+        {steps < stepper.length && <input style={button} type="button" value={steps < stepper.length-1 ? "Next Step ⇨" : 'Submit Form'} onClick={() => dispatch(setStep(steps+1))}/>}
     </div>
   );
 }
