@@ -5,7 +5,7 @@ import FileUploadField from '../../patterns/fileUploadField';
 import DropDown from '../../patterns/DropDown';
 import MultipleDropDowns from '../../patterns/MultipleDropDowns';
 import { useDispatch } from 'react-redux';
-import { setStep } from '../../features/survey';
+import { setStep } from '../../reducers/survey';
 
 const StepPage = ({data, step}) => {
   const dispatch = useDispatch()

@@ -5,7 +5,7 @@ import LandingPageMain from './landingPage/landingPageMain';
 import LandingPageComp from './landingPage/landingPageComp';
 import LandingPageFood from './landingPage/landingPageFood';
 import LandingPageFooter from './landingPage/landingPageFooter';
-import { surveyActionRequest } from '../features/survey';
+import { surveyActionRequest } from '../reducers/survey';
 
 const LandingPage = () => {
     const dispatch = useDispatch();

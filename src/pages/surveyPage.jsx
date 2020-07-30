@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { useDispatch, useSelector } from 'react-redux'
-import { surveyActionRequest, setStep } from '../features/survey';
+import { surveyActionRequest, setStep } from '../reducers/survey';
 import StepPage from './surveyPage/stepPage';
 import './../styles/surveyPage.css'
 
