@@ -18,7 +18,7 @@ const MultipleDropDowns = ({data, text}) => {
   const DropDown = (data,index) => {
       return (
         <Col key={index}>
-            <div className="my-3 mx-3">{text}</div>
+            <div className="my-3 mx-3">{data.fieldValue}</div>
             <Dropdown className='my-3 mx-3' style={dropDownStyle} isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle
                 tag="div"
