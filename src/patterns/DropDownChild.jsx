@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
 import Toast from './../patterns/Toast'
-import DropDownChild from './DropDownChild';
+import DropDown from './DropDown';
 
-const DropDown = ({data, text}) => {
+const DropDownChild = ({data, text}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState(data[0]);
   const dropDownStyle =  {
@@ -46,15 +46,9 @@ const DropDown = ({data, text}) => {
       </DropdownMenu>
     </Dropdown>
     {(selectedValue.inverseParent.length && selectedValue.inverseParent[0].fieldType === "Notification") ? <Toast info={selectedValue.inverseParent[0].fieldValue} /> : null}
-    {(selectedValue.inverseParent.length && selectedValue.inverseParent[0].fieldType === "Label") ? 
-     selectedValue.inverseParent.map((item,index) => {
-       return (
-        <DropDownChild data={item.inverseParent} text={item.fieldValue} /> 
-       )
-     })
-    : null}
+    {(selectedValue.inverseParent.length && selectedValue.inverseParent[0].fieldType === "Label") ? <DropDownChild data={selectedValue.inverseParent} /> : null}
     </>
   );
 }
 
-export default DropDown;
+export default DropDownChild;
