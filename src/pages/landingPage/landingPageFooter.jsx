@@ -1,7 +1,13 @@
 import React from 'react';
 import { Col, Row } from 'reactstrap';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebook, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import './../../styles/landingPage.css'
 const LandingPageFooter = () => {
+    const facebookIcon = <FontAwesomeIcon icon={faFacebook} />
+    const twitterIcon = <FontAwesomeIcon icon={faTwitter} />
+    const youtubeIcon = <FontAwesomeIcon icon={faYoutube} />
   return (
     <Row>
         <Col lg={6} className='main-background-8'>
@@ -36,7 +42,7 @@ const LandingPageFooter = () => {
                         <Col lg={6}>IBAN: </Col><Col lg={6}><div className='contact-info'>123 456 789</div></Col>
                         </div>
                         <div className='contact-item d-flex ml-n2 mt-3'>
-                        <Col lg={6}>Drustvene mreze: </Col><Col lg={6}><div className='contact-info'>Ul. Školska bb</div></Col>
+  <Col lg={6}>Drustvene mreze: </Col><Col lg={6}><div className='contact-info'>{facebookIcon}  {twitterIcon}  {youtubeIcon}</div></Col>
                         </div>
                     </div>
                 </Col>

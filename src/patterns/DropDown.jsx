@@ -7,6 +7,7 @@ const DropDown = () => {
     border: "1px solid",
     width: '100%',
     padding: "4px",
+    cursor: "pointer"
   }
 
   const toggle = () => setDropdownOpen(prevState => !prevState);
