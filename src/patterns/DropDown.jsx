@@ -33,7 +33,7 @@ const DropDown = ({data, text}) => {
       </DropdownToggle>
       <DropdownMenu className='w-150' style={dropDownMenu}>
         {data && data.map((item, index) =>{
-          return <div className="my-2 mx-2" style={dropDownItem} onClick={toggle}>  {item.fieldValue}  </div>
+          return <div key={index} className="my-2 mx-2" style={dropDownItem} onClick={toggle}>  {item.fieldValue}  </div>
         })}
       </DropdownMenu>
     </Dropdown>
