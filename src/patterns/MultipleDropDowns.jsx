@@ -18,7 +18,7 @@ const MultipleDropDowns = ({data, text}) => {
   const DropDown = (data,index) => {
       return (
         <Col key={index}>
-            <div className="my-3 mx-3">{data.fieldValue}</div>
+            <div className="mt-3 mx-3">{data.fieldValue}</div>
             <Dropdown className='my-3 mx-3' style={dropDownStyle} isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle
                 tag="div"
@@ -41,7 +41,7 @@ const MultipleDropDowns = ({data, text}) => {
 
   return (
     <>
-    <div className="my-3 mx-3 py-3">{text}</div>
+    <div className="mt-3 mx-3 pt-3">{text}</div>
     <Row className="d-flex">
         {data.map((item, index) => {
             return DropDown(item,index)
